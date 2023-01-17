@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="">  
+    <title>E-Commerce</title>
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/segoe-ui-4" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/azzara.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <style>
+
+ .search-container {
+  float: inline-start;
+}
+
+.tphed input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.tphed .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #072C3F;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.tphed .search-container button:hover {
+  background: #072C3F;
+}
+
+@media screen and (max-width: 600px) {
+  .tphed .search-container {
+    float: none;
+  }
+} 
+    </style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    
+<!-- Navbar (sit on top) -->
+<div class="tphed w3-top"style="background-color: #072C3F; overflow: hidden;">
+    <div class="w3-bar  w3-large  "  id="myNavbar">
+
+       <a href="javascript:void(0)" class="w3-bar-item w3-xlarge w3-button w3-hover-none" style="padding-right: 20px ;" onclick="w3_open()">
+        <i class="fa fa-navicon" style="color: white;"></i>
+      </a> 
+      <a href="ink_website3.html" class="w3-bar-item  w3-hover-none w3-button w3-wide"><img src="" style="margin: 0px;padding-left: 20px;padding-top: 5px;"   width="70.2" height="43" alt="LOGO" ></a>
+
+      <!-- Right-sided navbar links -->
+      <div class=" w3-right w3-hide-small w3-hide-medium"></div>
+  
+
+
+
+      <div class="search-container w3-display-middle " >
+        <form action="">
+        <button type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Search.." name="search">
+          
+        </form>
+      </div>
+      
+      <!--div class="main-header" ></div>
+
+      <div class="collapse" id="search-nav" >
+        <form class="navbar navbar-form ">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-search pr-1"> 
+                        <i class="fa fa-search search-icon"></i>
+                    </button>
+                </div>
+                <input type="text" placeholder="Search " class="form-control">
+            </div>
+        </form>
+    </div-->
+
+    <div style="float: right;padding: 15px;">
+    <i class="fa fa-heart  " style="color: white;"></i>
+    <i class="fa fa-user"style="color: white;"></i>
+    <i class="fa fa-cart-plus"style="color: white;"></i>
+    <i class="fa fa-globe"style="color: white;"></i>
+   </div>
+
+
+    <!--div class="search-container">
+        <form action="">
+
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+            
+        </form>
+      </div-->
+
+
+    </div>
+   
+</div>
+
+
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-hover-bronz w3-card w3-animate-left " style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+  <a href="#aboutus" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+  <a href="#service" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Service</a>
+  <a href="#project" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">Sign in</a>
+</nav>
+
+
+  <!-- Header with full-height image -->
+  <header  style="background-color: white ;padding-bottom: 40px;"  class="bgimg-1 w3-hide-small w3-hide-medium w3-display-container w3-grayscale-min" id="home">
+
+    <div class="w3-row-padding">
+  
+    <div class="w3-display-left w3-col m6 " style="padding: 64px">
+
+      <span  class=" w3-xxlarge w3-hide-small" style="color: #072C3F;font-size: 50px;">Online Shopping</span><br>
+
+      <span class="w3-large w3-hide-small w3-text-grey">you can shopping everything<br/>       
+        online in a easy and safe way</span>
+      <br/><br/>
+
+      <p >
+        <a href="" target="_blank" class="w3-button w3-round-large w3-padding-20 w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-center" style=" border-style:solid ; border-color: #FF6600;">
+          Sign Up</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="" target="_blank" class="w3-button w3-round-large w3-padding-20 w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-center" style=" border-style:solid ; border-color: #FF6600;">
+         Log In</a>
+      </p>
+
+
+
+
+</div> 
+      <div class="bkim w3-col m6" style="float:right;" >
+      <img src="img/shopping.png" style=" height:485px;width: 585px;padding: 64px;" >
+    </div>
+      
+    </div>
+    
+    <div class="w3-center">
+    <p >
+      <a href="" target="_blank" class="w3-button w3-round-large w3-padding-20 w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-center" style=" border-style:solid ; border-color: #FF6600;">
+        +1000<br/>New Arrival</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="" target="_blank" class="w3-button w3-round-large w3-padding-20 w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-center" style=" border-style:solid ; border-color: #FF6600;">
+       Big Sales</a>
+       &nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="" target="_blank" class="w3-button w3-round-large w3-padding-20 w3-large w3-margin-top w3-opacity w3-hover-opacity-off w3-center" style=" border-style:solid ; border-color: #FF6600;">
+       Payment<br/>reciept and visa</a>
+    </p>
+</div>
+
+
+
+
+    
+  </header>
+
+
+
+
+
+
+
+
+
+<!--about  #96D9C9-->
+<section style="padding-top: 64px; padding-bottom: 64px;" id="aboutus">
+    <div class="w3-container   w3-round-large " style="  background-color:#5FC1AE  ; width: 65%; padding:32px 16px ;margin: auto; ">
+
+        <div class="w3-row-padding">
+
+          <div class="w3-col m6 w3-center "  >
+        <h6 style="font-size: 20px;color: white;padding-top: 70px;"><b>You can Shopping everything online<br/>in easy and safe way</h6>
+            
+        </div>
+        
+        <div class="  w3-col m6 " style="padding: 0px;">
+            <img class=" w3-image w3-round-xlarge" src="img/53.png" alt="about" />
+            </div>
+
+        
+
+    </div>
+ </div>
+
+</section>
+
+
+
+
+
+<!--categories-->
+<section>
+  <h2 style=" padding: 32px;">Categories </h2>
+
+
+
+<div class="w3-container " style="padding:32px 16px">
+  <div class="w3-row-padding">
+
+    
+
+      <div class="w3-col m1">
+        <div class="w3-card w3-center w3-round-large " style=" background-color: #8ED16F;  padding: 5px ;">
+          <img src="img/home.png" alt="home" style="width: 35px;height: 40px;" >              
+          <p style="color: white;">Home</p>                 
+        </div>
+        </div>
+
+
+    <div class="w3-col m1">
+      <div class="w3-card w3-center w3-round-large " style=" background-color: #941AFF;  padding: 5px ;">
+        <div style="padding: 5px;">
+         <img src="img/businesswoman.png" alt="businesswoman" style="width: 30px;height: 40px;" >                
+          <p style="color: white;">Women</p>  
+        </div>
+              
+      </div>
+    </div>
+
+    <div class="w3-col m1">
+      <div class="w3-card w3-center w3-round-large " style=" background-color: #195F82;  padding: 5px ;">
+        <img src="img/boss.png" alt="men" style="width: 35px;height: 40px;" >              
+        <p style="color: white;">Men</p>                 
+      </div>
+      </div>
+
+      <div class="w3-col m1">
+        <div class="w3-card w3-center w3-round-large " style=" background-color: #DB247F;  padding: 5px ;">
+          <img src="img/children.png" alt="children" style="width: 35px;height: 40px;" >              
+          <p style="color: white;">Children</p>                 
+        </div>
+        </div>
+
+        <div class="w3-col m1">
+          <div class="w3-card w3-center w3-round-large " style=" background-color: #FF8800;  padding: 5px ;">
+            <img src="img/toys.png" alt="toys" style="width: 35px;height: 40px;" >              
+            <p style="color: white;">Toys</p>                 
+          </div>
+          </div>
+
+          <div class="w3-col m1">
+            <div class="w3-card w3-center w3-round-large " style=" background-color: #1CD165;  padding: 5px ;">
+              <img src="img/sports.png" alt="sports" style="width: 35px;height: 40px;" >              
+              <p style="color: white;">Sports</p>                 
+            </div>
+            </div>
+
+            <div class="w3-col m1">
+              <div class="w3-card w3-center w3-round-large " style=" background-color: #009CEB;  padding: 5px ;">
+                <img src="img/outline.png" alt="home" style="width: 35px;height: 40px;" >              
+                <p style="color: white;">Health & beauty</p>                 
+              </div>
+              </div>
+
+              <div class="w3-col m1">
+                <div class="w3-card w3-center w3-round-large " style=" background-color: #CE0606;  padding: 5px ;">
+                  <img src="img/home.png" alt="home" style="width: 35px;height: 40px;" >              
+                  <p style="color: white;">Vegetables</p>
+                </div>
+                </div>
+
+                <div class="w3-col m1">
+                  <div class="w3-card w3-round-large " style=" background-color: #8ED16F;  padding: 5px ;">
+                    <div >
+                    <img src="img/home.png" alt="home" style="width: 35px;height: 40px;" >              
+                    <p style="color: white;">Home</p>
+                  </div>
+                  </div>
+                  </div>
+
+  </div>
+</div>
+
+
+</section>
+
+
+<!--new item-->
+<section style="margin-top: 64px;">
+
+  <div style="padding-left: 32px;padding-bottom: 48px;">
+
+    <h2 style=" padding: 0px;">New Items </h2>
+    
+
+  </div>
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+<section style="margin-top: 64px;">
+
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+
+<!--trade marks-->
+
+<section style="margin-top: 64px;">
+
+  <div style="padding-left: 32px;padding-bottom: 48px;">
+    <h2 style=" padding: 0px;">Trade Marks</h2>
+    
+
+
+  </div>
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m2">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m2">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m2">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+        <div class="w3-col m2">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+        <div class="w3-col m2">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+
+<!--Popular Item-->
+<section style="margin-top: 64px;">
+
+  <div style="padding-left: 32px;padding-bottom: 48px;">
+    <h2 style=" padding: 0px;">Popular Item </h2>
+
+  </div>
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+<section style="margin-top: 64px;">
+
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+
+<!--spiceal offers-->
+<section style="margin-top: 64px;">
+
+  <div style="padding-left: 32px;padding-bottom: 48px;">
+    <h2 style=" padding: 0px;">Spiceal Offers </h2>
+
+  </div>
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m8">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+       
+      </div>
+    </div>
+
+</section>
+
+
+<section style="margin-top: 64px;">
+
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+
+<!--electronics-->
+<section style="margin-top: 64px;">
+
+  <div style="padding-left: 32px;padding-bottom: 48px;">
+    <h2 style=" padding: 0px;">Electronics </h2>
+
+  </div>
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+<section style="margin-top: 64px;">
+
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+
+<!--about-->
+<section style="padding-top: 64px; padding-bottom: 64px;" id="aboutus">
+  <div class="w3-container   w3-round-large " style="  background-color: #FCD8D8; width: 65%; padding:32px 16px ;margin: auto; ">
+
+      <div class="w3-row-padding">
+
+        <div class="w3-col m6" style="color: white;" >
+      <h2 ><b>About </b></h2>
+      <h6><b>We are INKS Company, 
+          we aim to find the best design
+          for you home , office and clinic</h6>
+          <h6>
+              -Interior & Exterior designs<br/>
+              -Home décor<br/>
+              -Architectural<br/>
+         </b> </h6>
+      </div>
+      
+      <div class="  w3-col m6 " style="padding: 0px;">
+          <img class=" w3-image w3-round-xlarge" src="img/about.jpg" alt="about" style="width: 385px;height: 300px;"/>
+          </div>
+
+      
+
+  </div>
+</div>
+
+</section>
+
+
+
+<!--bags-->
+<section style="margin-top: 64px;">
+
+  <div style="padding-left: 32px;padding-bottom: 48px;">
+
+    <h2 style=" padding: 0px;">Bags </h2>
+    
+
+  </div>
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m4">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+        <div class="w3-col m4">
+          <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+        </div>
+    
+      </div>
+    </div>
+
+</section>
+
+
+
+<!---->
+<section style="margin-top: 64px;">
+
+ 
+
+  <div class="w3-container " style="padding:32px 16px">
+      <div class="w3-row-padding">
+    
+        
+    
+          <div class="w3-col m8">
+              <img class="w3-image w3-round-large" src="img/230197883_112850874427165_6296986432847329982_n.jpg" alt="products" width="400" height="94">
+            </div>
+
+
+       
+      </div>
+    </div>
+
+</section>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="###################" alt="Ahmed" style="width:100%">
+        <div class="w3-container">
+          <h3>Ahmed KHafagy</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="##################" alt="Ahmed" style="width:100%">
+        <div class="w3-container">
+          <h3>Ahmed</h3>
+          <p class="w3-opacity">Programmer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="#######################" alt="Mai" style="width:100%">
+        <div class="w3-container">
+          <h3>Mai</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="w3-container" style="padding:128px 16px" id="team">
+  
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="###################" alt="Ahmed" style="width:100%">
+          <div class="w3-container">
+            <h3>Ahmed KHafagy</h3>
+            <p class="w3-opacity">CEO & Founder</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="##################" alt="Ahmed" style="width:100%">
+          <div class="w3-container">
+            <h3>Ahmed</h3>
+            <p class="w3-opacity">Programmer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="#######################" alt="Mai" style="width:100%">
+          <div class="w3-container">
+            <h3>Mai</h3>
+            <p class="w3-opacity">Designer</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+</div>
+
+<div class="w3-container" style="padding:128px 16px" id="team">
+
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="###################" alt="Ahmed" style="width:100%">
+        <div class="w3-container">
+          <h3>Ahmed KHafagy</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="##################" alt="Ahmed" style="width:100%">
+        <div class="w3-container">
+          <h3>Ahmed</h3>
+          <p class="w3-opacity">Programmer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="#######################" alt="Mai" style="width:100%">
+        <div class="w3-container">
+          <h3>Mai</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="##################" alt="Yusif" style="width:100%">
+        <div class="w3-container">
+          <h3>Yusif</h3>
+          <p class="w3-opacity">Programmer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+<!--footer-->
+<footer class=" w3-padding-64" style="background-color: #072C3F;
+width: 100%;
+position: absolute;
+   left: 0;
+   bottom: 0;" >
+  <div class="w3-row-padding  ">
+
+  <div class="w3-col  m3  w3-center" >
+   <small><h5 style="color: #FF6600">Home tools</h5> 
+   <p>Business solutions</p>
+   <p>Security solutions</p>
+   <p>Cloud solutions</p>
+   <p>Data center solutions</p>
+   <p>Collaboration solutions</p>
+   <p>Data & Communication <br/> solutions</p>
+   <p>Cabling infrastructure<br/> solution </p></small>
+  </div>
+
+  <div class="w3-col  m3 w3-center" >
+   <small><h5 style="color: #FF6600">Clothes</h5> 
+    <p>Programming Servises</p>
+    <p>IT Servises</p></small> 
+   </div>
+
+   <div class="w3-col m3 w3-center" >
+     <h5 style="color: #FF6600">Health beuty</h5>
+     
+
+    <h6>+2 01050660146</h6>
+    
+    <h6>market@icon-ts.com</h6>
+    
+   </div>
+
+
+
+<div class="w3-col  m3 w3-center" >
+
+
+
+<p style="text-align: center;" >
+  <b>Contact with us</b>
+</p>
+
+  <div  class="w3-xlarge w3-section w3-center">  
+     
+    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+  </div>
+
+</div>
+
+</div>
+</footer>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
